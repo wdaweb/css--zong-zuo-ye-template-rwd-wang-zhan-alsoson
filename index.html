@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- swiper.css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="./css/all.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 開頭-->
+  <div class="container-fluid top">
+    <!-- <iframe src="./images/coffin-svgrepo-com.svg"></iframe> -->
+    <div class="box-svg d-flex-center-center">
+
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="50%" y="70%"  fill="white" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+      <g>
+	    <g>
+		  <path d="M424.627,143.859L344.083,4.352C342.528,1.66,339.655,0,336.545,0H175.455c-3.11,0-5.983,1.66-7.538,4.352L87.373,143.859
+			c-1.096,1.899-1.436,4.14-0.951,6.278l80.544,355.084c0.899,3.965,4.423,6.779,8.489,6.779h161.088
+			c4.066,0,7.589-2.814,8.489-6.779l80.544-355.084C426.063,147.999,425.723,145.757,424.627,143.859z M329.593,494.591H182.406
+			l-78.252-344.98l76.327-132.202h151.038l76.328,132.202L329.593,494.591z"/>
+	  </g>
+    </g>
+    <g>
+	  <g>
+		<path d="M375.332,151.323L317.28,50.776c-1.555-2.693-4.428-4.352-7.538-4.352H202.259c-3.11,0-5.983,1.66-7.538,4.352
+			l-58.051,100.547c-1.096,1.899-1.436,4.14-0.951,6.278l68.321,301.196c0.898,3.965,4.423,6.779,8.489,6.779h86.944
+			c4.066,0,7.59-2.814,8.489-6.779l68.321-301.196C376.768,155.463,376.428,153.222,375.332,151.323z M292.52,448.167h-73.041
+			l-66.029-291.092l53.834-93.242h97.432l53.833,93.242L292.52,448.167z"/>
+	  </g>
+    </g>
+    <g>
+	  <g>
+		<path d="M320.604,142.089H279.27V98.526c0-4.807-3.897-8.704-8.704-8.704h-29.131c-4.807,0-8.704,3.897-8.704,8.704v43.563
+			h-41.335c-4.807,0-8.704,3.897-8.704,8.704v29.131c0,4.807,3.897,8.704,8.704,8.704h41.335v118.526
+			c0,4.807,3.897,8.704,8.704,8.704h29.131c4.807,0,8.704-3.897,8.704-8.704V188.629h41.335c4.807,0,8.704-3.897,8.704-8.704
+			v-29.131C329.309,145.987,325.411,142.089,320.604,142.089z M311.901,171.22h-41.335c-4.807,0-8.704,3.897-8.704,8.704v118.526
+			H250.14V179.925c0-4.807-3.897-8.704-8.704-8.704h-41.335v-11.722h41.335c4.807,0,8.704-3.897,8.704-8.704v-43.563h11.722v43.563
+			c0,4.807,3.897,8.704,8.704,8.704h41.335V171.22z"/>
+	  </g>
+    </g>
+    </svg>
+    </div>
+  </div>
+  
+  <!-- <section>
+    <div class="container-fluid">
+      <div class="box container-fluid top"></div>
+    </div>
+  </section> -->
+  
+
+  <!-- section01 -->
+  <section id="section01">
+    <div class="container"  >
+      <div id="navbar" class="d-flex-center-center">
+        <div> 
+          <!-- <button class="d-flex" style="flex-direction:column;width: 50px;height: 50px; position: absolute; right: 10px;top:10px;background-color: red;border: 0ch;">
+            <div class="line">1</div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </button> -->
+          <a class="text-orange" href="#">Home</a>
+          <a  href="#section01">Services</a>
+          <a  href="#section03">Gallery</a>
+          <a  href="#section05">Team</a>
+          <a  href="#section08">Blog</a>
+          <a  href="#section11">Contact</a>
+        </div>
+      </div>
+    
+
+      <div class="box" class="d-flex-center-center" style="padding:100px 30px;">
+        <div class="wrap">
+        <h2>The Night</h2>
+        <hr>
+        <p>Horrified by the idea your Halloween party  will be not scary enough? <br>
+          We will help you to make it perfect!</p>
+
+        <div class="swiper-box">
+          <!-- 3.設定 swiper 結構 -->
+          <div id="section01-swiper" class="swiper mySwiper">
+            <div class="swiper-wrapper" style="margin-bottom:30px;">
+
+              <div class="swiper-slide d-flex-center-center" style="flex-direction:column;">
+                <img src="./images/section01-theNight/pumpkin.png" alt="">
+                <div class="text-wrap">
+                  <h3>Jack-o'-lantern Carvings</h3>
+                  <p>What is a Halloween party without some nice glowing pumpkins? We have the best designs and tutorials for Jack-o'-lanterns.</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide d-flex-center-center" style="flex-direction:column;">
+                <img src="./images/section01-theNight/broom.png" alt="">
+                <div class="text-wrap">
+                  <h3>Broom Race</h3>
+                  <p>Get with your broom to the start position and try to win the race against all the other witches.</p>
+                </div>
+              </div>
+              <div class="swiper-slide d-flex-center-center" style="flex-direction:column;">
+                <img src="./images/section01-theNight/spider-web.png" alt="">
+                <div class="text-wrap">
+                  <h3>Spooky Decorations</h3>
+                  <p>Our team will create an original Halloween scene - every undead creature will feel like home there.</p>
+                </div>
+              </div>
+              <div class="swiper-slide d-flex-center-center" style="flex-direction:column;">
+                <img src="./images/section01-theNight/witch-hat.png" alt="">
+                <div class="text-wrap">
+                  <h3>Creepy Costumes</h3>
+                  <p>Vampires, Ghosts, Witches, Zombies & much more - we offer a big collection of costumes.</p>
+                </div>
+              </div>
+              <div class="swiper-slide d-flex-center-center" style="flex-direction:column;">
+                <img src="./images/section01-theNight/candy.png" alt="">
+                <div class="text-wrap">
+                  <h3>Candy and Loot Bags</h3>
+                  <p>You can pick from a big collection of selfmade sweets and diffrent types of loot bags..</p>
+                </div>
+              </div>
+              <div class="swiper-slide d-flex-center-center" style="flex-direction:column;">
+                <img src="./images/section01-theNight/bowl.png" alt="">
+                <div class="text-wrap">
+                  <h3>Punch Bowl</h3>
+                  <p>Our bowls are very tasty and look like a brew from medieval times.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 分頁 -->
+            <div class="swiper-pagination"></div>
+            <!-- 上下頁 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section02 -->
+  <section id="section02">
+    <div class="container-fluid section02-bg" >
+      <div class="section02-text-wrap  d-flex-center-center" style="flex-direction:column;">
+        <h2>
+          Halloween is the most important day for us
+        </h2>
+        <hr class="bg-white">
+        <p>We know how to make the perfect party for you and your children.</p>
+        <a href="#" class="cta">GALLERY</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section03 -->
+  <section id="section03">
+    <div class="box d-flex-center-center" style="flex-direction: column;margin:100px 0 70px 0">
+      <h2>Gallery</h2>
+      <hr>
+      <p>Browse through the pictures of our latest parties and get inspiration for your own.</p>
+
+      <div class="box">
+        <div class="btn-box">
+          <button id="btn-all">
+            <h3> All </h3>
+            </button>
+          <button id="btn-jack-o-lanterns">
+            <h3>Jack-o-lanterns</h3>
+            </button>
+          <button id="btn-decorations">
+            <h3> Decorations </h3>
+            </button>
+          <button id="btn-locations">
+            <h3> Locations </h3>
+            </button>
+          <button id="btn-costumes">
+            <h3> Costumes </h3>
+            </button>
+        </div>
+      </div>
+
+      <div id="section03-img-box" class="box">
+        <div class="img-box">
+          <img src="./images/section03-gallery/1.jpg" alt="">
+        </div>
+        <div class="img-box">
+          <img src="./images/section03-gallery/2.jpg" alt="">
+        </div>
+        <div class="img-box">
+          <img src="./images/section03-gallery/3_0.jpg" alt="">
+        </div>
+        <div class="img-box">
+          <img src="./images/section03-gallery/4.jpg" alt="">
+        </div>
+        <div class="img-box">
+          <img src="./images/section03-gallery/5.jpg" alt="">
+        </div>
+        <div class="img-box">
+          <img src="./images/section03-gallery/6.jpg" alt="">
+        </div>
+        <div class="img-box">
+          <img src="./images/section03-gallery/7.jpg" alt="" style="margin-top: -10%;
+          ">
+        </div>
+        <div class="img-box">
+          <img src="./images/section03-gallery/8.jpg" alt="" style="margin-top: -64%;
+          ">
+        </div>
+        <div class="img-box">
+          <img src="./images/section03-gallery/9.jpg" alt="" style="margin-top: -26%;
+          ">
+        </div>
+        <div class="img-box">
+          <img src="./images/section03-gallery/10.jpg" alt="" style="margin-top: -77%;
+          ">
+        </div>
+     
+    </div>
+<!-- 一堆圖片QAQ -->
+  </section>
+
+  <!-- section04 -->
+  <section id="section04">
+    <div class="container-fluid">
+    <h2>What people say about us</h2>
+    <hr>
+    <div class=" section04-bg" style="height: 90%;">
+        <!-- 3.設定 swiper 結構 -->
+        <div id="section04-swiper" class="swiper mySwiper" style="height:100%">
+          <div class="swiper-wrapper" style="margin-bottom:30px;height: 100%;">
+
+            <div class="swiper-slide d-flex-center-center" style="flex-direction:column;height: 100%;">
+              <div class="text-wrap">
+                <blockquote>"Always remember that you are absolutely unique. Just like everyone else."</blockquote>
+                <h6>- Margaret Mead</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide d-flex-center-center" style="flex-direction:column;height: 100%;">
+              <div class="text-wrap">
+                <blockquote>"A very nice castle with a lot of food. Awesome how many people came there. My brides also liked it a lot."</blockquote>
+                <h6>- Dracula</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide d-flex-center-center" style="flex-direction:column;height: 100%;">
+              <div class="text-wrap">
+                <blockquote>"GARR!! AAAAAHHHRG!!!"</blockquote>
+                <h6>- A zombie</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide d-flex-center-center" style="flex-direction:column;height: 100%;">
+              <div class="text-wrap">
+                <blockquote>BUUUUUUH HUUUUUUUUU!</blockquote>
+                <h6>- A ghost</h6>
+              </div>
+            </div>
+
+          </div>
+            
+          <!-- 分頁 -->
+          <div class="swiper-pagination"></div>
+          <!-- 上下頁 -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section05 -->
+  <section id="section05">
+    <div class="container">
+    <h2>Our Team</h2>
+    <hr>
+    <div id="section05-swiper" class="swiper mySwiper" >
+      <div class="swiper-wrapper" >
+
+        <div class="swiper-slide d-flex-center-center" style="flex-direction:column;">
+          <div class="img-wrap mask-bat">
+            <img src="./images/section05-ourTeam/about-1_0.jpg" alt="">
+            
+          </div>
+
+          <div class="text-wrap">
+            <h4>Cleopatra</h4>
+            <h6 class="text-orange">Theme Explanation</h6>
+            <p>You can change the form of every image in the purchased theme. You have control over that.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide d-flex-center-center" style="flex-direction:column;height: 100%;">
+          <div class="img-wrap mask-coffin">
+            <img src="./images/section05-ourTeam/about-1_0.jpg" alt="">
+            
+          </div>
+
+          <div class="text-wrap">
+            <h4>Cleopatra</h4>
+            <h6 class="text-orange">Founder</h6>
+            <p>You can change the form of every image in the purchased theme. You have control over that.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide d-flex-center-center" style="flex-direction:column;height: 100%;">
+          <div class="img-wrap mask-ghost">
+            <img src="./images/section05-ourTeam/about-1_0.jpg" alt="">
+            
+          </div>
+
+          <div class="text-wrap">
+            <h4>Cleopatra</h4>
+            <h6 class="text-orange">Founder</h6>
+            <p>You can change the form of every image in the purchased theme. You have control over that.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide d-flex-center-center" style="flex-direction:column;height: 100%;">
+          <div class="img-wrap mask-grave">
+            <img src="./images/section05-ourTeam/about-1_0.jpg" alt="">
+            
+          </div>
+
+          <div class="text-wrap">
+            <h4>Cleopatra</h4>
+            <h6 class="text-orange">Founder</h6>
+            <p>You can change the form of every image in the purchased theme. You have control over that.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide d-flex-center-center" style="flex-direction:column;height: 100%;">
+          <div class="img-wrap mask-pumpkin">
+            <img src="./images/section05-ourTeam/about-1_0.jpg" alt="">
+            
+          </div>
+
+          <div class="text-wrap">
+            <h4>Cleopatra</h4>
+            <h6 class="text-orange">Founder</h6>
+            <p>You can change the form of every image in the purchased theme. You have control over that.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide d-flex-center-center" style="flex-direction:column;height: 100%;">
+          <div class="img-wrap mask-circle">
+            <img src="./images/section05-ourTeam/about-1_0.jpg" alt="">
+            
+          </div>
+
+          <div class="text-wrap">
+            <h4>Cleopatra</h4>
+            <h6 class="text-orange">Founder</h6>
+            <p>You can change the form of every image in the purchased theme. You have control over that.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide d-flex-center-center" style="flex-direction:column;height: 100%;">
+          <div class="img-wrap mask-square">
+            <img src="./images/section05-ourTeam/about-1_0.jpg" alt="">
+            
+          </div>
+
+          <div class="text-wrap">
+            <h4>Cleopatra</h4>
+            <h6 class="text-orange">Founder</h6>
+            <p>You can change the form of every image in the purchased theme. You have control over that.</p>
+          </div>
+        </div>
+        
+      </div>
+
+      
+      <!-- 分頁 -->
+      <div class="swiper-pagination" style="margin-top:50px;"></div>
+      <!-- 上下頁 -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      
+    </div>
+  </div>
+  </section>
+  
+  <!-- section06-->
+  <section id="section06">
+    <div class="container">
+      
+        <h2 class="change-h2">partnership</h2>
+        <hr>
+          <div class="box">
+            <div class="section06-img">
+              <img src="./images/section07-partnership/brand-1.png" alt="">
+            </div>
+            <div class="section06-img">
+              <img src="./images/section07-partnership/brand-2.png" alt="">
+            </div>
+            <div class="section06-img">
+              <img src="./images/section07-partnership/brand-3.png" alt="">
+            </div>
+            <div class="section06-img">
+              <img src="./images/section07-partnership/brand-4.png" alt="">
+            </div>
+
+          </div>
+      
+    </div>
+        
+      
+    <div class="container-2">
+      <h2 id="tickets">Tickets</h2>
+      <hr class="appear">
+      <div class="card-box">
+        <div class="card">
+          <div class="card-title">
+            <h3>Single Entry</h3>
+            <h4>19.99$</h4>
+          </div>
+          <div class="card-body">
+            <p>1 person</p>
+            <p>Small pumpkin gift</p>
+            <p>
+              Drinks cost extra</p>
+          </div>
+          <a href="#tickets" class="cta">get ticket</a>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <h3>Couple Entry</h3>
+            <h4>29.99$</h4>
+          </div>
+          <div class="card-body">
+            <p>2 persons</p>
+            <p> Pumpkin gift</p>
+            <p>Drinks cost extra</p>
+          </div>
+          <a href="#tickets" class="cta">get ticket</a>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <h3>Couple Entry</h3>
+            <h4>49.99$</h4>
+          </div>
+          <div class="card-body">
+            <p>6 persons</p>
+            <p>Big pumpkin gift</p>
+            <p>Drinks are all inclusive</p>
+          </div>
+          <a href="#tickets" class="cta">get ticket</a>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- section07 影片問題-->
+  <section id="section07">
+    <div class="container-fluid">
+      <video autoplay loop>
+        <source src="./images/section07-bg-video.mp4" type="video/mp4">
+      </video>
+      <div class="box">
+        <h2>Custom Decoration</h2>
+        <hr>
+        <p>This is was custom decoration we did for a clint recently</p>
+        <a href="#" class="cta">See more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section08 -->
+  <section id="section08">
+    <h2>Blog</h2>
+    <hr>
+    <div class="container">
+      <div class="card">
+        <div class="card-title">
+          <img src="./images/section08-blog/hero-2.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h4>Jack-o'-lantern carving tutorial</h4>
+          <h6>Wed, 01/29/2020 - 19:28</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="card-footer">
+          <a href="" class="cta">full post</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <img src="./images/section08-blog/hero-3.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h4>Last year we celebrated in a hounted house</h4>
+          <h6>Wed, 01/29/2020 - 19:27</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="card-footer">
+          <a href="" class="cta">full post</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <img src="./images/section08-blog/5_0.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h4>Decoration tutorial</h4>
+          <h6>Wed, 01/29/2020 - 19:26</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="card-footer">
+          <a href="" class="cta">full post</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">
+          <img src="./images/section08-blog/10_0.jpg" alt="">
+        </div>
+        <div class="card-body">
+          <h4>LEDs or candles for halloween?</h4>
+          <h6>Wed, 01/29/2020 - 19:24</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="cta">full post</a>
+        </div>
+      </div>
+   
+     <div class="box"  style="text-align:center;">
+       <a href="#" class="cta" style="text-align:center; ">view blog</a>
+     </div>
+   </div>
+  </section>
+
+  <!-- section09 -->
+  <section id="section09">
+    <div class="container-fluid">
+      <div class="box d-flex-center-center" style="background-color: #36211b;">
+        <h2>Already Hooked?</h2>
+        <hr style="background:white;">
+        <p>Drop us a message and we will make your halloween unforgettable.</p>
+        <a class="cta" href="">contact us</a>
+      </div>
+      
+      <div class="box" style="margin-top:50px;">
+        <h2>FQA</h2>
+        <hr>
+        <div class="box-row">
+          <div class="row d-flex-center-center">
+            <h3>How much does a party cost?</h3>
+          </div>
+          <div class="row d-flex-center-center">
+            <h3>Question 2?</h3>
+          </div>
+          <div class="row d-flex-center-center">
+            <h3>Question 3?</h3>
+          </div>
+          <div class="row d-flex-center-center">
+            <h3>Question 4?</h3>
+          </div>
+          <div class="row d-flex-center-center">
+            <h3>Question 5?</h3>
+          </div>
+          <div class="row d-flex-center-center">
+            <h3>Question 6?</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section10 -->
+  <section id="section10">
+    <div class="container-fluid">
+      
+      <div class="container-img">
+        <div class="box">
+        <h2>This Holloween is special</h2>
+        <hr style="background:white;">
+        <p>This year we will have a very rare blood moon on halloween.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- section11 -->
+  <section id="section11">
+    <div class="container-fluid d-flex-center-center">
+      <h2>Contact Us</h2>
+      <hr>
+      <form action="">
+        <div class="box">
+          <div class="box-wrap">
+            <div class="box-input">
+              <div class="box-text">
+                <label for="input-name">Name</label>
+              </div>
+                <input type="text" name="" id="input-name">
+            </div>
+
+            <div class="box-input">
+              <div class="box-text">
+                <label for="input-email">Email</label>
+              </div>
+                <input type="text" name="" id="input-email">
+            </div>
+
+            <div class="box-input">
+              <div class="box-text">
+                <label for="input-subject">Subject</label>
+              </div>
+                <input type="text" name="" id="input-subject">
+            </div>
+          </div>
+
+          <div class="box-wrap">
+            <div class="box-input">
+              <div class="box-text">
+                <label for="input-message">Message</label>
+              </div>
+                <input type="textarea" name=""  id="input-message">
+            </div>
+
+            <div class="box-input">
+              <div class="box-policy">
+                <input type="checkbox" name="" id="policy">
+                <label for="#policy">Yes I have read the  privacy policy. Bla bla this new law is  annoying.</label>
+              </div>
+              <input id="submit" type="button" value="submit">
+
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- section12 地圖 -->
+<section12 id="section12">
+  <div class="container-fluid">
+    <div class="box-map d-flex-center-center"> 
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0597622359824!2d120.42438801464534!3d23.530352853064322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e960305450457%3A0xb486be468ce3eb84!2z5rCR6ZuE6ay85bGL5ZKW5ZWh!5e0!3m2!1szh-TW!2stw!4v1657287647793!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="box">
+      <h2  style="padding-top:30px;">Theme: Halloween</h2>
+      <!-- <hr style="text-align:left;align-self: flex-start;"> -->
+      <p style="text-align:left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="box-p">
+        by: <a href="">Zhen Li</a>
+      </div>
+      <div class="box-p">
+        Phone: <a href="">1234124</a>
+      </div>
+      <div class="box-p">
+        Email: <a href="0971579957lulu@gmail.com">0971579957lulu@gmail.com</a>
+      </div>
+    
+
+    <div class="box">
+      <h3 style="padding-top:30px;">Follow us:</h3>
+      <ul>
+        <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
+        <li> <a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
+        <li> <a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        <li> <a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+      <ul>
+        <li>&copy; 2020</li>
+        <li>Imprint</li>
+        <li>Privacy Policy</li>
+        <li>Credits</li>
+      </ul>
+    </div>
+  
+</section12>
+
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+  <script>
+  
+  var section01Swiper = new Swiper("#section01-swiper", {
+    loop: true, // 無限循環
+    // 啟動分頁指示器功能
+    pagination: {
+        el: "#section01-swiper .swiper-pagination",
+      },
+        navigation: {
+          nextEl: "#section01 .swiper-button-next",
+          prevEl: "#section01 .swiper-button-prev",
+        },
+      });
+
+  var section04Swiper = new Swiper("#section04-swiper", {
+    loop: true, // 無限循環
+    // 啟動分頁指示器功能
+    pagination: {
+        el: "#section04-swiper .swiper-pagination",
+      },
+        navigation: {
+          nextEl: "#section04 .swiper-button-next",
+          prevEl: "#section04 .swiper-button-prev",
+        },
+      });
+
+  var section05Swiper = new Swiper("#section05-swiper", {
+    loop: true, // 無限循環
+    // 啟動分頁指示器功能
+    slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+    pagination: {
+        el: "#section05-swiper .swiper-pagination",clickable: true,
+      },
+        navigation: {
+          nextEl: "#section05 .swiper-button-next",
+          prevEl: "#section05 .swiper-button-prev",
+        },
+      });
+  </script>
+</body>
+</html>
+
+
+<!-- 
+  1.swiper的上下頁
+  2.navbar expand
+  3. 自行otf如何使用
+  4.top 上的svg圖 & 自
+  5. section03 圖片還沒做
+  6. secton04 還沒調 指示器&上頁頁 名字大小
+ -->
