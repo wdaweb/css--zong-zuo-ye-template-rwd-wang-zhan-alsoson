@@ -15,8 +15,15 @@
 </head>
 <body>
   <!-- 開頭-->
-  <div class="container-fluid top">
+  <div class="container-fluid top d-flex-center-center">
     <!-- <iframe src="./images/coffin-svgrepo-com.svg"></iframe> -->
+    
+    <div class="box-text">
+      <h1>Halloween</h1>
+      <h1>Horror</h1>
+      <h1>Hrunting</h1>
+    </div>
+
     <div class="box-svg d-flex-center-center">
 
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="50%" y="70%"  fill="white" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -696,7 +703,12 @@
 
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
+  <script src="./gsap/gsap.js"></script>
+  <script src="./gsap/ScrollTrigger.js"></script>
+  <script src="./gsap/ScrollToPlugin.js"></script>
+  <script src="./gsap/SplitText.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' ></script>
+  
 
   <script>
   
@@ -738,6 +750,63 @@
           prevEl: "#section05 .swiper-button-prev",
         },
       });
+
+  // top
+  gsap.to('.box-svg', {
+    y:1,
+    repeat:-1,
+    yoyo:true,
+    duration:5,
+  })
+
+  const splitH1 = gsap.utils.toArray('.box-text h1')
+  // console.log(splitH1)
+
+  const tl = gsap.timeline({
+  repeat: -1,
+  repeatDelay: 8
+})
+
+tl
+      .from('.top h1', 
+      {
+        // y: 60,
+        // rotationX: -90,
+        // autoAlpha: 0,
+        duration:3,
+        opacity:1,
+        stagger: {
+          each: 3,
+        }
+      })
+      .to('.top h1', {
+        // y: -60,
+        // rotationX: 90,
+        // autoAlpha: 0,
+        opacity:0,
+        stagger: 3
+      }, 3)
+
+  // gsap.fromTo('.box-text h1',
+
+  //     {
+  //         opacity:1,
+  //         duration:1,
+  //     },
+  //     {
+  //         scale:1.3,
+  //         opacity:0.6,
+  //     },
+  //     {
+  //       opacity:0,
+  //       delay: 3, // delay、duration 動畫屬性要設定在第二組
+  //       duration: 3
+  //     }
+  //   )
+
+
+
+
   </script>
 </body>
 </html>
